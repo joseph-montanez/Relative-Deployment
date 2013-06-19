@@ -42,3 +42,9 @@ Using a Port From an Existing Command
 -------------------------------------
 
 If you used a random port and need that port to talk to the previous application you can reference the port but using **":"** for example if you named the previous command with **"name": "Php"** then the port should be **"port": ":Php"**
+
+
+How to Package?
+---------------
+
+The purpose is to use **app.exe** as a stub, which you would rename to your application name. To edit a executable icon you can use with software such as [Resource Editor](http://melander.dk/reseditor/) .If really want total control over the application, then you can download the Visual Studio solution which is for Visual Studio 2012 Desktop, will work with "Express Edition". Then edit the resourses from Visual Studio.
