@@ -1,12 +1,15 @@
 Relative-Deployment
 ===================
 
+[v0.01 Release 32bit](http://www.shabb.com/relative-deployment/relative-deployment-0.01.zip)
+
 A configurable windows process control tool. Designed to run web applications as if they were desktop applications. There will be much more to come here are a few missing features I still need to develop:
 
 - [ ] Make a json command property on destruction, i.e if a command dies, does it kill the rest of the applications running along with it?
 - [ ] Support console-less mode. Easy but then if you run command line applications they each get their own window, very annoying
 - [ ] Find a why to hind console windows, maybe using services? Depends on previous issue.
 - [ ] Auto restart if process dies. Stop reying after X attemps, how long to wait before considering an application to be successful
+- [ ] Allow a configuration file to be located anywhere on the system, and use that file as a relative directory.
 
 
 **Example Configuration File**
