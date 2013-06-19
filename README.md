@@ -3,7 +3,7 @@ Relative-Deployment
 
 [v0.01 Release 32bit](http://www.shabb.com/relative-deployment/relative-deployment-0.01.zip)
 
-A configurable windows process control tool. Designed to run web applications as if they were desktop applications. There will be much more to come here are a few missing features I still need to develop:
+A configurable windows process control tool. Designed to run web applications as if they were desktop applications. There will be much more to come. Here are a few missing features I still need to develop:
 
 - [ ] Make a json command property on destruction, i.e if a command dies, does it kill the rest of the applications running along with it?
 - [ ] Support console-less mode. Easy but then if you run command line applications they each get their own window, very annoying
@@ -47,4 +47,4 @@ If you used a random port and need that port to talk to the previous application
 How to Package?
 ---------------
 
-The purpose is to use **app.exe** as a stub, which you would rename to your application name. To edit a executable icon you can use with software such as [Resource Editor](http://melander.dk/reseditor/) .If really want total control over the application, then you can download the Visual Studio solution which is for Visual Studio 2012 Desktop, will work with "Express Edition". Then edit the resourses from Visual Studio.
+The purpose is to use **app.exe** as a stub, which you would rename to your application name. To edit a executable icon you can use with software such as [Resource Editor](http://melander.dk/reseditor/). If really want total control over the application, then you can download the Visual Studio solution which is for Visual Studio 2012 Desktop, will work with "Express Edition". Then edit the resourses from Visual Studio.
