@@ -106,7 +106,6 @@ int _tmain(int argc, _TCHAR* argv[])
 								exit(1);
 							}
 						}
-						TRACE("port after: %s", port.c_str());
 						ports[name] = port;
 					}
 
@@ -115,6 +114,20 @@ int _tmain(int argc, _TCHAR* argv[])
 					if (std::string::npos != port_index) {
 						cmd.replace(port_index, 5, port);
 					}
+
+					for (auto it = ports.begin(); it != ports.end(); ++it) {
+						std::string mapped_port_name = it->first;
+						std::string mapped_port = it->second;
+						std::size_t mapped_port_index;
+						do {
+							mapped_port_index = cmd.find("$:" + mapped_port_name);
+							if (std::string::npos != mapped_port_index) {
+								cmd.replace(mapped_port_index, mapped_port_name.length() + 2, mapped_port);
+							}
+						} while(std::string::npos != mapped_port_index);
+					}
+
+					TRACE("RUNNING CMD: %s", cmd.c_str());
 					
 					std::wstring wcmd(cmd.begin(), cmd.end());
 					if (type.compare("process") == 0) {
