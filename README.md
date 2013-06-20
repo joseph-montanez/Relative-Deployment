@@ -1,7 +1,9 @@
 Relative-Deployment
 ===================
 
-[v0.01 Release 32bit](http://www.shabb.com/relative-deployment/relative-deployment-0.01.zip)
+[v0.0.2 Release 32bit](http://www.shabb.com/relative-deployment/relative-deployment-0.0.2.zip)
+ - Able to reference ports in "cmd"
+[v0.0.1 Release 32bit](http://www.shabb.com/relative-deployment/relative-deployment-0.0.1.zip)
 
 A configurable windows process control tool. Designed to run web applications as if they were desktop applications. There will be much more to come. Here are a few missing features I still need to develop:
 
